@@ -1,5 +1,4 @@
 import React from 'react';
-import ParticleNetwork from './ParticleNetwork';
 import GlitchText from './GlitchText';
 import { Download } from 'lucide-react';
 import { FaXTwitter, FaGithub } from 'react-icons/fa6';
@@ -7,8 +6,7 @@ import { FaXTwitter, FaGithub } from 'react-icons/fa6';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      <ParticleNetwork />
-
+      
       <div className="max-w-5xl mx-auto px-6 relative z-10 w-full flex flex-col md:flex-row items-center gap-12">
 
         {/* Left / Top Text Content */}

@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import CustomCursor from './components/CustomCursor';
+import ParticleNetwork from './components/ParticleNetwork';
 import './index.css';
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-background min-h-screen text-textPrimary selection:bg-accent selection:text-background">
+    <div className="bg-background min-h-screen text-textPrimary selection:bg-accent selection:text-background relative">
       {!isMobile && <CustomCursor />}
+      <ParticleNetwork />
       <Navbar />
       <Hero />
       <About />
