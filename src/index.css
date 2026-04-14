@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* ── Tailwind v4 Theme ──────────────────────────────────── */
+@theme {
+  --color-background: #050508;
+  --color-surface: #0d0d14;
+  --color-border: #1a1a2e;
+  --color-accent: #00FFD1;
+  --color-amber: #FF9500;
+  --color-textPrimary: #F0F0F0;
+  --color-textMuted: #6b7280;
+
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Base ───────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #00FFD1 #0d0d14;
+}
+
+body {
+  margin: 0;
+  background-color: #050508;
+  color: #F0F0F0;
+  font-family: "DM Sans", sans-serif;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #00FFD1;
+  color: #050508;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d14;
+}
+::-webkit-scrollbar-thumb {
+  background: #00FFD1;
+  border-radius: 3px;
+}
+
+/* ── Page load fade ─────────────────────────────────────── */
+#root {
+  animation: fadeInApp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInApp {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Blinking cursor ────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* ── Hex rotate border ──────────────────────────────────── */
+@keyframes rotateBorder {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-rotate-slow {
+  animation: rotateBorder 8s linear infinite;
+}
+
+/* ── Glow pulse ─────────────────────────────────────────── */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 8px #00FFD1; }
+  50%      { box-shadow: 0 0 20px #00FFD1, 0 0 40px rgba(0,255,209,0.3); }
+}
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* ── Animated Text Gradient ─────────────────────────────── */
+@keyframes textGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-text-gradient {
+  background-size: 200% auto;
+  animation: textGradient 4s linear infinite;
+}
