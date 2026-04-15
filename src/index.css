@@ -10,8 +10,8 @@
   --color-textPrimary: #F0F0F0;
   --color-textMuted: #6b7280;
 
-  --font-mono: "Alexandria", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Alexandria", ui-monospace, monospace;
+  --font-sans: "Afacad", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* ── Base ───────────────────────────────────────────────── */
