@@ -16,8 +16,8 @@ const achievementsData = [
     description: 'Syntax Error Hackathon (Freshman Track), IIT Roorkee',
   },
   {
-    icon: '⚡',
-    title: 'Ongoing',
+    icon: '🎯',
+    title: 'Participated',
     highlight: false,
     description: 'X Layer Hackathon with Nexus.AI',
   },
