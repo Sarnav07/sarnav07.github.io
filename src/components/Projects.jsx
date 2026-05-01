@@ -5,6 +5,18 @@ import { FaGithub } from 'react-icons/fa6';
 
 const projectsData = [
   {
+    title: 'PRISM',
+    badge: 'Ongoing',
+    badgeColor: 'text-accent',
+    event: 'ETHGlobal OpenAgents',
+    description: [
+      'Multi-agent DeFi orchestration on Uniswap V4 with 5 specialized Python brains (predictive LP, fee curator, frag healer, backrunner, guardian)',
+      'Rust orchestrator running SP1 ZK proofs (solver, execution, Shapley, aggregator) for trustless on-chain settlement via custom V4 hook'
+    ],
+    tags: ['Rust', 'Python', 'Solidity', 'SP1', 'Uniswap V4', 'ZK'],
+    github: 'https://github.com/pranav7002/Prism'
+  },
+  {
     title: 'NEXUS.AI',
     badge: 'Participated',
     badgeColor: 'text-textMuted',

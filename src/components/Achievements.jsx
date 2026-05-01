@@ -16,6 +16,12 @@ const achievementsData = [
     description: 'Syntax Error Hackathon (Freshman Track), IIT Roorkee',
   },
   {
+    icon: '⚡',
+    title: 'Ongoing',
+    highlight: false,
+    description: 'ETHGlobal OpenAgents with PRISM',
+  },
+  {
     icon: '🎯',
     title: 'Participated',
     highlight: false,
